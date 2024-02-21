@@ -52,7 +52,7 @@ resource "aws_security_group" "demotf_security_group" {
 variable "instance_keypair" {
   description = "AWS EC2 key pair for ssh access"
   type = string
-  default ="demo-kp"
+  default ="SHOLA-kp"
   sensitive = true
 }
 
@@ -65,6 +65,6 @@ resource "aws_instance" "demo_instance" {
   associate_public_ip_address = true
 
   tags = {
-    Name = "productiontf-instance"
+    Name = "moyo-instance"
   }
 }
